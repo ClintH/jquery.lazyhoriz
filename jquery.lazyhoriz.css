@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+#slidesViewport {
+	width: auto;
+}
+
+#slides {
+	white-space: nowrap;
+	display: table;
+}
+
+#slides div {
+	display:inline-block;
+	vertical-align:top;
+}
+
+#slides div>div {
+	position:relative;
+	justify-content: center;
+	align-items: center;
+	display:flex;
+	display: -webkit-flex;
+	-webkit-justify-content:center;
+	-webkit-align-items:center;
+}
+#slides>div>div>img {
+	max-height:100%;
+	max-width: 100%;
+}
